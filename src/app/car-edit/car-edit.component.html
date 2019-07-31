@@ -10,6 +10,13 @@
                  required name="name" #name>
         </mat-form-field>
       </mat-card-content>
+      <mat-card-content>
+          <input type="hidden" name="href" [(ngModel)]="car.href">
+          <mat-form-field>
+            <input matInput placeholder="Car ownerDni" [(ngModel)]="car.ownerDni"
+                   required name="ownerDni" #ownerDni>
+          </mat-form-field>
+        </mat-card-content>
       <mat-card-actions>
         <button mat-raised-button color="primary" type="submit"
                 [disabled]="!carForm.form.valid">Save</button>
